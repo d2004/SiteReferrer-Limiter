@@ -17,3 +17,4 @@ print $getMSG;
 
 <br />
 <p>This is an HTML page</p>
+<!-- E --!>

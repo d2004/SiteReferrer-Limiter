@@ -1,13 +1,12 @@
 <?php
 require_once('SiteReferrer-Limiter/join.php');
-if (CheckReferrer()){
-  echo "welcome<br>";
-} else {
-  echo "denied<br>";
-}
 $loadS1 = new SiteReferrer;
 $getMSG = $loadS1->getMessage();
-print $getMSG;
+if (CheckReferrer()){
+  echo $getMSG;
+} else {
+  exit($getMSG);
+}
 ?>
 
 <!-- Powered by, Please do not remove --!>
